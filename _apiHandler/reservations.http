@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000/reservations
+### New
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "startDate": "12/20/2022",
+    "endDate": "12/25/2022",
+    "placeId": "12455",
+    "invoiceId": "493"
+}
+
+### Get all
+GET {{baseUrl}}
+
+### Get one
+GET {{baseUrl}}/6629d450bbae131b278b93a5
+
+### Update
+PATCH {{baseUrl}}/6629d450bbae131b278b93a5
+Content-Type: application/json
+
+{
+    "startDate": "12/20/2022",
+    "endDate": "12/25/2022",
+    "placeId": "12456",
+    "invoiceId": "492"
+}
+
+### Delete
+DELETE {{baseUrl}}/6629d9bc4fb4152667e74a96
